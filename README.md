@@ -1,3 +1,5 @@
+# Still building it so its not really ideal to use.
+
 # CodeLite
 
 A lightweight, open-source code editor built on [Tauri](https://tauri.app/) and the
