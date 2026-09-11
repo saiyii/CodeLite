@@ -1,0 +1,17 @@
+# Node
+node_modules/
+dist/
+
+# Rust / Tauri
+src-tauri/target/
+# Cargo.lock is intentionally committed (this is a binary application)
+
+# Editor / OS
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+# CodeLite's own per-project run configs are user-specific, don't ship them
+.codelite/

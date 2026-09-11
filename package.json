@@ -1,0 +1,22 @@
+{
+  "name": "codelite",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "CodeLite - a lightweight, extensible code editor built with Tauri and Monaco",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "monaco-editor": "^0.52.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "vite": "^5.4.0"
+  }
+}

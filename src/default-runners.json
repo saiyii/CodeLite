@@ -1,0 +1,86 @@
+[
+  {
+    "name": "LÖVE2D",
+    "match": { "filesPresent": ["conf.lua", "main.lua"] },
+    "command": "love",
+    "args": ["${projectRoot}"]
+  },
+  {
+    "name": "Node.js",
+    "match": { "extensions": [".js", ".mjs", ".cjs"] },
+    "command": "node",
+    "args": ["${file}"]
+  },
+  {
+    "name": "Node.js (TypeScript via tsx)",
+    "match": { "extensions": [".ts", ".tsx"] },
+    "command": "npx",
+    "args": ["tsx", "${file}"]
+  },
+  {
+    "name": "Python",
+    "match": { "extensions": [".py"] },
+    "command": "python",
+    "args": ["${file}"]
+  },
+  {
+    "name": "Lua",
+    "match": { "extensions": [".lua"] },
+    "command": "lua",
+    "args": ["${file}"]
+  },
+  {
+    "name": "Rust (cargo run)",
+    "match": { "filesPresent": ["Cargo.toml"] },
+    "command": "cargo",
+    "args": ["run"]
+  },
+  {
+    "name": "Go",
+    "match": { "extensions": [".go"] },
+    "command": "go",
+    "args": ["run", "${file}"]
+  },
+  {
+    "name": "C (gcc)",
+    "match": { "extensions": [".c"] },
+    "command": "sh",
+    "args": ["-c", "gcc \"${file}\" -o \"${fileDir}/${fileNameNoExt}\" && \"${fileDir}/${fileNameNoExt}\""]
+  },
+  {
+    "name": "C++ (g++)",
+    "match": { "extensions": [".cpp", ".cc", ".cxx"] },
+    "command": "sh",
+    "args": ["-c", "g++ \"${file}\" -o \"${fileDir}/${fileNameNoExt}\" && \"${fileDir}/${fileNameNoExt}\""]
+  },
+  {
+    "name": "Java",
+    "match": { "extensions": [".java"] },
+    "command": "sh",
+    "args": ["-c", "javac \"${file}\" -d \"${fileDir}\" && java -cp \"${fileDir}\" \"${fileNameNoExt}\""]
+  },
+  {
+    "name": "PHP",
+    "match": { "extensions": [".php"] },
+    "command": "php",
+    "args": ["${file}"]
+  },
+  {
+    "name": "Ruby",
+    "match": { "extensions": [".rb"] },
+    "command": "ruby",
+    "args": ["${file}"]
+  },
+  {
+    "name": "Shell script",
+    "match": { "extensions": [".sh"] },
+    "command": "bash",
+    "args": ["${file}"]
+  },
+  {
+    "name": "PowerShell",
+    "match": { "extensions": [".ps1"] },
+    "command": "powershell",
+    "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${file}"]
+  }
+]
