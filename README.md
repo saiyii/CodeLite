@@ -70,6 +70,4 @@ you can override or add to them freely.
 ## License
 
 MIT — see [LICENSE](LICENSE).
-
-It's not finished.
 #
